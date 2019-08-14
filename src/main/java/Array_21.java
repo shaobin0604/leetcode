@@ -1,4 +1,4 @@
-public class Array21 {
+public class Array_21 {
 
 
     public int removeDuplicates(int[] nums) {
@@ -41,7 +41,7 @@ public class Array21 {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 1, 2, 3};
 
-        final int len = new Array21().removeDuplicates(nums);
+        final int len = new Array_21().removeDuplicates(nums);
 
         for (int i = 0; i < len; i++) {
             System.out.print(nums[i]);

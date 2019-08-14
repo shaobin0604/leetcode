@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Array24 {
+public class Array_24 {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> marks = new HashSet<>();
 

@@ -5,6 +5,7 @@ buildscript {
     kotlin_version = "1.2.31"
 
     repositories {
+        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -26,6 +27,7 @@ apply {
 val kotlin_version: String by extra
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
