@@ -8,7 +8,7 @@ public class _07_ConstructBinaryTree {
         TreeNode left;
         TreeNode right;
 
-        public TreeNode(int val) {
+        TreeNode(int val) {
             this.val = val;
         }
     }
