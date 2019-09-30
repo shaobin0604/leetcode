@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _0088_MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;

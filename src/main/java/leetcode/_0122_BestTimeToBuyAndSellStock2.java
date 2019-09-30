@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _0122_BestTimeToBuyAndSellStock2 {
     public int maxProfit(int[] prices) {
         int profit = 0;

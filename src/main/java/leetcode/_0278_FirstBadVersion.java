@@ -1,3 +1,5 @@
+package leetcode;
+
 public class _0278_FirstBadVersion {
     private final int firstBadVersion;
     private int methodCallCount = 0;

@@ -1,5 +1,9 @@
+package leetcode;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import leetcode._0278_FirstBadVersion;
 
 public class _0278_FirstBadVersionTest {
     @Test

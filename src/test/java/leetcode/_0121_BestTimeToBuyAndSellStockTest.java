@@ -1,5 +1,9 @@
+package leetcode;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import leetcode._0121_BestTimeToBuyAndSellStock;
 
 public class _0121_BestTimeToBuyAndSellStockTest {
     @Test

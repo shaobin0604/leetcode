@@ -1,5 +1,9 @@
+package leetcode;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import leetcode._0088_MergeSortedArray;
 
 public class _0088_MergeSortedArrayTest {
     @Test

@@ -1,7 +1,11 @@
+package leetcode;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+
+import leetcode.Array_21;
 
 public class Array_21_Test {
     @Test

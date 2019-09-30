@@ -1,5 +1,9 @@
+package leetcode;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import leetcode._0055_MaximumSubarray;
 
 public class _0055_MaximumSubarrayTest {
     @Test
