@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class _07_ConstructBinaryTreeTest {
 
@@ -19,6 +20,8 @@ public class _07_ConstructBinaryTreeTest {
         Assert.assertArrayEquals(preOrderArray, preOrderTraversal(root));
         Assert.assertArrayEquals(inOrderArray, inOrderTraversal(root));
         Assert.assertArrayEquals(postOrderArray, postOrderTraversal(root));
+
+        Assert.assertArrayEquals(preOrderArray, preOrderTraversalIter(root));
     }
 
     @Test
@@ -32,7 +35,32 @@ public class _07_ConstructBinaryTreeTest {
         Assert.assertArrayEquals(preOrderArray, preOrderTraversal(root));
         Assert.assertArrayEquals(inOrderArray, inOrderTraversal(root));
         Assert.assertArrayEquals(postOrderArray, postOrderTraversal(root));
+
+        Assert.assertArrayEquals(preOrderArray, preOrderTraversalIter(root));
     }
+
+    private int[] preOrderTraversalIter(_07_ConstructBinaryTree.TreeNode root) {
+        final CollectorVisitor visitor = new CollectorVisitor();
+
+        Stack<_07_ConstructBinaryTree.TreeNode> stack = new Stack<>();
+        if (root != null) {
+            stack.push(root);
+        }
+
+        while (!stack.isEmpty()) {
+            _07_ConstructBinaryTree.TreeNode node = stack.pop();
+            visitor.visit(node);
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+
+        return visitor.toIntArray();
+    }
+
 
     private int[] preOrderTraversal(_07_ConstructBinaryTree.TreeNode root) {
         final CollectorVisitor visitor = new CollectorVisitor();
@@ -50,6 +78,22 @@ public class _07_ConstructBinaryTreeTest {
         if (node.right != null) {
             preOrderTraversalInternal(node.right, visitor);
         }
+    }
+
+    private int[] inOrderTraversalIter(_07_ConstructBinaryTree.TreeNode root) {
+        final CollectorVisitor visitor = new CollectorVisitor();
+
+        // TODO: 2019/10/1
+
+        return visitor.toIntArray();
+    }
+
+    private int[] postOrderTraversalIter(_07_ConstructBinaryTree.TreeNode root) {
+        final CollectorVisitor visitor = new CollectorVisitor();
+
+        // TODO: 2019/10/1
+
+        return visitor.toIntArray();
     }
 
     private int[] inOrderTraversal(_07_ConstructBinaryTree.TreeNode root) {
