@@ -2,6 +2,7 @@ package leetcode;
 
 import java.util.Stack;
 
+// https://leetcode-cn.com/problems/min-stack/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-38/
 public class _0155_MinStack {
 
     static class MinStack {
