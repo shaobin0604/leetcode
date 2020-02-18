@@ -13,7 +13,7 @@ public class _0088_MergeSortedArrayTest {
         int m = 3;
         int n = 3;
 
-        new _0088_MergeSortedArray().merge(nums1, m, nums2, n);
+        new _0088_MergeSortedArray.Solution().merge(nums1, m, nums2, n);
         final int[] expected = {1, 2, 2, 3, 5, 6};
         Assert.assertArrayEquals(expected, nums1);
     }
@@ -25,7 +25,7 @@ public class _0088_MergeSortedArrayTest {
         int m = 0;
         int n = 1;
 
-        new _0088_MergeSortedArray().merge(nums1, m, nums2, n);
+        new _0088_MergeSortedArray.Solution().merge(nums1, m, nums2, n);
         final int[] expected = {1};
         Assert.assertArrayEquals(expected, nums1);
     }
